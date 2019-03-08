@@ -1,5 +1,6 @@
 class Post 
   attr_accessor :title, :author
+  attr_reader :all
   
   @@all = []
   
@@ -7,5 +8,6 @@ class Post
     @title = title
     @@all << self
   end
+  
   
 end
